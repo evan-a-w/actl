@@ -77,8 +77,8 @@ Ia <- function(n, i, p=1, P=1, Q=1, j=NULL, due=FALSE) {
 }
 
 ann <- function(n, i, pi.=0, r=NULL, im, inc=FALSE
-                , dec=FALSE, due=FALSE, p=1, P=NULL, Q=NULL, j=NULL
-                ,s=FALSE, m=NULL) {
+                , dec=FALSE, due=FALSE, p=1, P=1, Q=1, j=NULL
+                , s=FALSE, m=0) {
   if (!missing(pi.)) {
     i <- r_from_pi_i(i, pi.)
   } else if (!missing(r)) {
